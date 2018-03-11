@@ -11,7 +11,9 @@ class ChartContainer extends React.Component {
         defaults.global.defaultFontColor = '#FFF8F0';
         defaults.global.defaultFontSize = 16;
         return (
+            <div id="chart-container">
             <div id="chart">
+            
                 < Line data= {{	
                     datasets: [{
                         label: 'Amount Spent',
@@ -45,6 +47,17 @@ class ChartContainer extends React.Component {
                 }} 
                 
                 options={{
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                display: false
+                            }
+                        }],
+                        yAxes: [{
+                            gridLines: {
+                                display: false
+                            }
+                        }]},
                     fontColor: '#E2C851',
                     defaultFontColor: '#E2C851',
                     elements: {
@@ -54,15 +67,13 @@ class ChartContainer extends React.Component {
                          }
                      },
                     legend: {
-                         labels: {
-                             // This more specific font property overrides the global property
-                             
-                         }
+                         display: false
                      }
                  }}
                         
     
                 />
+            </div>
             </div>
         );
     }

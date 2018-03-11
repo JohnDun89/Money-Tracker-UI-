@@ -5,6 +5,12 @@ body {
   background-color: rgba(red, green, blue, alpha)
 }
 
+#chart-container{
+    background-color: #0B3142;
+    padding: 5%;
+    max-width: 1000px;
+    
+}
 
 #chart {
   background-color: #0B3142;
