@@ -1,37 +1,65 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
+import { defaults } from 'react-chartjs-2';
 
 class ChartContainer extends React.Component {
     state = {  }
+
+
+    
     render() {
+        defaults.global.defaultFontColor = '#FFF8F0';
+        defaults.global.defaultFontSize = 16;
         return (
             <div id="chart">
-                < Line data= {{
+                < Line data= {{	
                     datasets: [{
-                        label: '# of Votes',
-                        data: [12, 19, 3, 5, 2, 3],
+                        label: 'Amount Spent',
+                        data: [15, 12, 30, 5, 10, 33, 3.5],
                         backgroundColor: [
-                            'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
+                            'rgba(0, 0, 0, 0.0)'
                         ],
                         borderColor: [
-                            'rgba(255,99,132,1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
+                            '#FFF8F0'
+   
                         ],
-                        borderWidth: 1
-                    }],
+                        borderWidth: 5
+                    }, 
+                        {
+                            label: 'Target',
+                            data: [8, 8, 8, 8, 20, 10, 10],
+                            backgroundColor: [
+                                'rgba(0, 0, 0, 0.0)'
+
+                            ],
+                            borderColor: [
+                                '#E2C851'
+
+                            ],
+                            borderWidth: 5
+                        }
+                        
+                        ],
                    
-                    labels: ["Monday", "Tuesday", "Wedensday", "Thursday", "Friday", "Saturday", "Sunday"],
-      
-                 } }
+                    labels: ["Monday", "Tuesday", "Wedensday", "Thursday", "Friday", "Saturday", "Sunday"]
+                }} 
+                
+                options={{
+                    fontColor: '#E2C851',
+                    defaultFontColor: '#E2C851',
+                    elements: {
+                         line: {
+                             tension: 0, // disables bezier curves
+                             
+                         }
+                     },
+                    legend: {
+                         labels: {
+                             // This more specific font property overrides the global property
+                             
+                         }
+                     }
+                 }}
                         
     
                 />
