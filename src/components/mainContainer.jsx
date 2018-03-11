@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import ChartComponent from './chart.jsx'
 
 class MainContainer extends Component {
     state = {  }
     render() {
         return (
-           <div></div> 
+           <div>
+               < ChartComponent />
+           </div> 
         );
     }
 }
