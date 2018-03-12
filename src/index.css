@@ -4,6 +4,8 @@ body {
   font-family: sans-serif;
   color: #FFF8F0;
   background-color: #FFF8F0;
+  /* font-family: 'Raleway', sans-serif; */
+font-family: 'Ubuntu', sans-serif;
 }
 
 .flex{
@@ -18,6 +20,8 @@ body {
 
 #budget-text-remain{
   margin-left: 10%;
+    color: #E2CD6f;
+
 }
 
 #chart-container{
@@ -70,6 +74,7 @@ body {
 }
 
 #navigation h1{
+  font-size: 40px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -89,7 +94,7 @@ body {
 }
 
 
-@media all and (min-width: 100px )   {
+@media all and (min-width: 0px )   {
 
  #navigation {
    align-content: center;
@@ -104,6 +109,14 @@ body {
   height: 100%;
  }
 
+ #add-box{
+   width: 85%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   background-color: #2E5077;
+   padding-left: 5%;
+   margin-top: 1%;
+ }
 
 
 }
