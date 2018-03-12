@@ -43,7 +43,7 @@ class ChartContainer extends React.Component {
                         
                         ],
                    
-                    labels: ["Monday", "Tuesday", "Wedensday", "Thursday", "Friday", "Saturday", "Sunday"]
+                    labels: ["M", "T", "W", "T", "F", "S", "S"]
                 }} 
                 
                 options={{
@@ -80,3 +80,5 @@ class ChartContainer extends React.Component {
 }
 
 export default ChartContainer;
+
+//42.85
