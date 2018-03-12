@@ -8,7 +8,9 @@ class Main extends Component {
         return (
             <div id="main">
                 < TopBar />
+                <div className="flex">
                 < MainContainer />
+                </div>
             </div>
         );
     }

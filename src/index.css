@@ -6,7 +6,18 @@ body {
   background-color: #FFF8F0;
 }
 
-#main{
+.flex{
+  display:  flex; 
+  justify-content: center;
+}
+
+#budget-text-spent{
+  margin-right: 10%;
+
+}
+
+#budget-text-remain{
+  margin-left: 10%;
 }
 
 #chart-container{
@@ -27,6 +38,7 @@ body {
 
 .percentage {
   text-align: center;
+  
   margin: 1%;
   padding: 1%;
   background-color: #0B3142;
@@ -77,9 +89,10 @@ body {
 }
 
 
-@media all and (min-width: 480px )   {
+@media all and (min-width: 100px )   {
 
  #navigation {
+   align-content: center;
    font-size: 10px;
    flex-direction: column-reverse;
  }
@@ -102,6 +115,8 @@ body {
 @media all and ( min-width: 960px )  {
 
  #navigation {
+   align-content: center;
+   align-items: center;
    flex-direction: row;
  }
 
